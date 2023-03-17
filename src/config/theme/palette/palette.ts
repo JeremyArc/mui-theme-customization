@@ -7,15 +7,20 @@ import {
 	ActionColor,
 } from "./type";
 
+import { PaletteColorOptions } from "@mui/material";
+
 const common: CommonColor = {
 	black: "#000",
 	white: "#fff",
 };
 
-const primary: ColorLevel = {
-	main: "#1976d2",
+const primary: PaletteColorOptions = {
+	// main: "#1976d2",
+	main: "#EC3C15",
 	light: "#42a5f5",
-	dark: "#1565c0",
+	// dark: "#1565c0",
+	// note: this value will be used as button 's hover state
+	dark: "#9CA5EE",
 	contrastText: "#fff",
 };
 
@@ -77,7 +82,7 @@ const text: Text = {
 	disabled: "rgba(0, 0, 0, 0.38)",
 };
 
-const backgrond: Background = {
+const background: Background = {
 	paper: "#fff",
 	default: "#fff",
 };
@@ -94,4 +99,18 @@ const action: ActionColor = {
 	focus: "rgba(0, 0, 0, 0.12)",
 	focusOpacity: 0.12,
 	activeOpacity: 0.12,
+};
+
+export const palette = {
+	common,
+	primary,
+	secondary,
+	error,
+	warning,
+	success,
+	info,
+	grey,
+	text,
+	background,
+	action,
 };

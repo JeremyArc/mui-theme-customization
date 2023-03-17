@@ -1,4 +1,5 @@
 import { BreakpointKeys, BreakpointValues } from "./type";
+import { BreakpointsOptions } from "@mui/material";
 
 const breakpointKeys: BreakpointKeys = {
 	0: "xs",
@@ -17,8 +18,8 @@ const breakpointValues: BreakpointValues = {
 };
 
 const breakpoints = {
-	keys: breakpointKeys,
-	values: breakpointValues,
+	keys: { ...breakpointKeys },
+	values: { ...breakpointValues },
 };
 
 export { breakpoints };
